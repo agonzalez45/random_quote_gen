@@ -14,8 +14,8 @@ app.use(express.json());
 app.use(cors());
 
 
-const CONNECTION_URL = 'mongodb+srv://bito94:bH7WWgibBDj29DHI@cluster0.c79rp.mongodb.net/sample_airbnb?retryWrites=true&w=majority';
-const DATABASE_NAME = 'prendaDB'
+const CONNECTION_URL = '';
+const DATABASE_NAME = ''
 
 app.listen(API_PORT, () => {
     MongoClient.connect(CONNECTION_URL, { useNewUrlParser: true }, (error, client) => {
